@@ -1,0 +1,43 @@
+/* Header styles */
+header {
+    background-color: #34495e; /* Dark background for the header */
+    color: white; /* White text color */
+    padding: 20px 40px; /* Padding for spacing inside the header */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  /* Header title */
+  header h1 {
+    font-size: 24px; /* Set font size for the title */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Navigation bar styles */
+  header nav {
+    display: flex; /* Horizontal layout for the links */
+    gap: 20px; /* Space between each link */
+  }
+  
+  /* Navigation link styles */
+  header nav a {
+    color: white; /* White color for the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size for the links */
+    padding: 8px 12px; /* Padding for clickable area */
+    border-radius: 4px; /* Slight rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  /* Hover effect for navigation links */
+  header nav a:hover {
+    background-color: #1abc9c; /* Change background on hover */
+  }
+  
+  /* Active link (optional, add 'active' class for current item) */
+  header nav a.active {
+    background-color: #16a085; /* A different color for the active link */
+  }
+  
+  

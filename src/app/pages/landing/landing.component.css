@@ -1,0 +1,76 @@
+/* Container for the landing page */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient from pink to orange */
+  color: #fff; /* White text color */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Styling for the main heading */
+.landing-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for text visibility */
+}
+
+/* Styling for the paragraph text */
+.landing-container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  max-width: 650px;
+  line-height: 1.6;
+  opacity: 0.85; /* Slightly faded for a soft feel */
+}
+
+/* Login button styling */
+.login-button {
+  background-color: #ff8c00; /* Orange button */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the login button */
+.login-button:hover {
+  background-color: #e67e22; /* Darker orange */
+  transform: translateY(-3px); /* Lift the button on hover */
+}
+
+/* Focus effect for the login button */
+.login-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 140, 0, 0.3); /* Subtle focus ring */
+}
+
+/* Responsive adjustments for small devices */
+@media (max-width: 600px) {
+  .landing-container h1 {
+    font-size: 2.2rem; /* Smaller font size on small screens */
+  }
+
+  .landing-container p {
+    font-size: 1rem; /* Smaller paragraph text */
+    padding: 0 20px;
+  }
+
+  .login-button {
+    padding: 12px 30px; /* Slightly smaller button */
+    font-size: 1.1rem; /* Smaller button text */
+  }
+}

@@ -1,0 +1,33 @@
+/* Flexbox container for side-by-side layout */
+.main {
+  display: flex; /* Enable flexbox layout */
+  gap: 20px; /* Space between components */
+  padding: 20px; /* Keep padding around the container */
+  background-color: #f4f4f4; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin: 20px; /* Space around the main container */
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Set 70% width for the first component */
+.main > app-data-table {
+  flex: 5; /* Use flex ratio for 70% */
+}
+
+/* Set 30% width for the second component */
+.main > app-employee-create {
+  flex: 5; /* Use flex ratio for 30% */
+}
+
+@media (max-width: 768px) {
+  .side-by-side {
+    flex-direction: column; /* Stack components vertically */
+    gap: 10px; /* Reduce the gap on smaller screens */
+  }
+
+  .side-by-side > * {
+    flex: none; /* Reset flex properties */
+    width: 100%; /* Make both components take full width */
+  }
+}

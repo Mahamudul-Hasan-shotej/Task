@@ -1,0 +1,77 @@
+/* Container for the whole dashboard content */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the heading */
+  .dashboard-container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better text visibility */
+  }
+  
+  /* Styling for the paragraph */
+  .dashboard-container p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
+    opacity: 0.85; /* Slightly faded text */
+  }
+  
+  /* Logout button styling */
+  button {
+    background-color: #ff5252; /* Material red color */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for the button */
+  button:hover {
+    background-color: #e53935; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift the button slightly */
+  }
+  
+  /* Focus effect for accessibility */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 82, 82, 0.4); /* Subtle focus ring */
+  }
+  
+  /* Small devices styling */
+  @media (max-width: 600px) {
+    .dashboard-container h2 {
+      font-size: 2rem; /* Slightly smaller font size on small screens */
+    }
+    
+    .dashboard-container p {
+      font-size: 1rem; /* Smaller paragraph text */
+      padding: 0 15px;
+    }
+  
+    button {
+      padding: 10px 25px; /* Slightly smaller button */
+    }
+  }
+  

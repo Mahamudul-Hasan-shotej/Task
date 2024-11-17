@@ -1,0 +1,100 @@
+/* General container styling */
+.element-form-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Title or heading styling */
+  .element-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4CAF50;
+  }
+  
+  /* Form field styling */
+  .form-field {
+    margin-bottom: 20px;
+  }
+  
+  /* Label styling */
+  .form-field label {
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Input field styling */
+  .form-field input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Input field focus effect */
+  .form-field input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+  }
+  
+  /* Error message styling */
+  .error {
+    font-size: 12px;
+    color: #e74c3c;
+    margin-top: 5px;
+  }
+  
+  /* Submit button styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Disabled button styling */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Styling for form section */
+  .form-field input,
+  button {
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .element-form-container {
+      padding: 20px;
+      margin: 20px;
+    }
+    button {
+      padding: 14px;
+    }
+  }
+  

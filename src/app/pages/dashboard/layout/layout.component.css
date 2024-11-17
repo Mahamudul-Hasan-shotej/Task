@@ -1,0 +1,25 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+.content-area {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+app-header, app-footer {
+  flex: 0 0 auto;
+}
+
+app-side-nav {
+  width: 250px;
+  flex: 0 0 250px;
+}
